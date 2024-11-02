@@ -26,13 +26,15 @@ const App = () => {
   //   setFeedbacks({ ...feedbacks, [feedbackType]: feedbacks[feedbackType] + 1 });
   // };
 
+  // console.log(contactsData);
+
   return (
     <>
       <div>
         <h1>Phonebook</h1>
         <ContactForm />
         <SearchBox />
-        <ContactList contactsData={contactsData} />
+        <ContactList contacts={contactsData} />
       </div>
     </>
   );

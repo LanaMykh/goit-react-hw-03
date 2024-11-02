@@ -1,0 +1,12 @@
+.box {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    gap: 16px;
+    padding: 10px;
+}
+
+.data {
+    margin-right: 20px;
+}

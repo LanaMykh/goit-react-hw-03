@@ -16,22 +16,12 @@ const ContactForm = ({ onAddContact }) => {
     <Formik initialValues={{ initial_Values }} onSubmit={handleSubmit}>
       <Form className={styles.form}>
         <label className={styles.label}>
-          <span>Name:</span>
-          <Field
-            type="text"
-            name="name"
-            className={styles.input}
-            placeholder="Ivan Ivanov"
-          />
+          Name:
+          <Field type="text" name="name" className={styles.input} />
         </label>
         <label className={styles.label}>
-          <span>Number:</span>
-          <Field
-            className={styles.input}
-            type="text"
-            name="number"
-            placeholder="+38xxxxxxxxxx"
-          />
+          Number:
+          <Field className={styles.input} type="text" name="number" />
         </label>
         <button type="submit">Add contact</button>
       </Form>

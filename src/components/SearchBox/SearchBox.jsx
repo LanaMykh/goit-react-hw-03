@@ -1,7 +1,21 @@
-const SearchBox = () => {
-  return (
-    <div>SearchBox</div>
-  )
-}
+import { useId } from 'react';
+import styles from './SearchBox.module.css';
 
-export default SearchBox
+const SearchBox = ({ valueFilter, handleChange }) => {
+  const filterId = useId();
+
+  return (
+    <div className={styles.SearchBox}>
+      <label htmlFor="">Find contact by name</label>
+      <input
+        type="text"
+        name="SearchBox"
+        value={valueFilter}
+        onChange={handleChange}
+        id={filterId}
+      />
+    </div>
+  );
+};
+
+export default SearchBox;
