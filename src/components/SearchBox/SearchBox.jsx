@@ -6,7 +6,7 @@ const SearchBox = ({ valueFilter, handleChange }) => {
 
   return (
     <div className={styles.SearchBox}>
-      <label htmlFor="">Find contact by name</label>
+      <label htmlFor={filterId}>Find contact by name</label>
       <input
         type="text"
         name="SearchBox"

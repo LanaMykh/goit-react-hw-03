@@ -3,10 +3,32 @@
     margin-top: 20px;
     border: 1px solid black;
     border-radius: 8px;
-    gap: 16px;
     padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
 }
 
-.data {
-    margin-right: 20px;
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn {
+    /* background-color: #f0f0f0; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    /* cursor: pointer; */
 }

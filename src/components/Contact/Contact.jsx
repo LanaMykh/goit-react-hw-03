@@ -4,7 +4,7 @@ import styles from './Contact.module.css';
 const Contact = ({ data: { id, name, number }, onDelete }) => {
   return (
     <div className={styles.box}>
-      <div className={styles.data}>
+      <div className={styles.info}>
         <p className={styles.text}>
           <HiUser />
           {name}
