@@ -17,6 +17,16 @@ const App = () => {
     localStorage.setItem('saveContacts', JSON.stringify(contacts));
   }, [contacts]);
 
+  const [filter, setFilter] = useState('');
+
+  const filterContacts = contacts.filter(contact =>
+    contact.name.toLowerCase().includes(filter.toLowerCase().trim())
+  );
+
+  const handleChange = event => {
+    setFilter(event.target.value);
+  };
+
   const addContact = newContact => {
     setContacts([...contacts, { id: nanoid(), ...newContact }]);
   };
@@ -31,8 +41,8 @@ const App = () => {
       <div>
         <h1>Phonebook</h1>
         <ContactForm onAddContact={addContact} />
-        <SearchBox />
-        <ContactList contacts={contacts} onDelete={deleteContact} />
+        <SearchBox valueFilter={filter} handleChange={handleChange} />
+        <ContactList contacts={filterContacts} onDelete={deleteContact} />
       </div>
     </>
   );
