@@ -23,12 +23,3 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-.btn {
-    /* background-color: #f0f0f0; */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-left: 20px;
-    padding: 5px 10px;
-    /* cursor: pointer; */
-}

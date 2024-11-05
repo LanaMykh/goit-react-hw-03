@@ -43,7 +43,7 @@ const ContactForm = ({ onAddContact }) => {
             name="name"
             className={styles.input}
           />
-          <ErrorMessage name="name" component="span" />
+          <ErrorMessage name="name" component="span" className={styles.err} />
         </label>
         <label htmlFor={frmNumberId} className={styles.label}>
           Number
@@ -53,7 +53,7 @@ const ContactForm = ({ onAddContact }) => {
             name="number"
             className={styles.input}
           />
-          <ErrorMessage name="number" component="span" />
+          <ErrorMessage name="number" component="span" className={styles.err} />
         </label>
         <button type="submit" className={styles.btn}>
           Add contact

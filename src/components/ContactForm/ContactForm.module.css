@@ -18,3 +18,7 @@
 .btn {
     padding: 4px 10px 2px;
 }
+
+.err {
+    color: red;
+}
